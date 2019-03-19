@@ -1,0 +1,49 @@
+{
+  "consumer": {
+    "name": "Consumer"
+  },
+  "provider": {
+    "name": "Provider"
+  },
+  "interactions": [
+    {
+      "description": "A GET request to retrieve car dtos",
+      "providerState": "There are 3 cars",
+      "request": {
+        "method": "get",
+        "path": "/api/cars"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": [
+          {
+            "Id": 1,
+            "Brand": "Volkswagen",
+            "Model": "Golf",
+            "Color": "Black"
+          },
+          {
+            "Id": 2,
+            "Brand": "Mercedes-Benz",
+            "Model": "A200",
+            "Color": "Grey"
+          },
+          {
+            "Id": 3,
+            "Brand": "Audi",
+            "Model": "Q5",
+            "Color": "Black"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
